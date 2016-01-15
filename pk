@@ -1,14 +1,14 @@
 #!/bin/bash
 #Variable GITHUBNAME wird in .bashrc gesetzt 
-GITHUB=https://github.com
+GITHUB="curl https://github.com"
 if [ "$#" -eq 0 ]; then 
 	echo "$GITHUBNAME's public key"
-	curl $GITHUB/$GITHUBNAME.keys
+	$GITHUB/$GITHUBNAME.keys
 else    
 	for NAME in "$@"
 	do
 		echo "$NAME's public key"
-		curl $GITHUB/$NAME.keys
+		$GITHUB/$NAME.keys
 	done
 fi
 

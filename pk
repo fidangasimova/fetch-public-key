@@ -1,4 +1,5 @@
 #!/bin/bash
+#Variable GITHUBNAME wird in .bashrc gesetzt 
 GITHUB=https://github.com
 if [ "$#" -eq 0 ]; then 
 	echo "$GITHUBNAME's public key"

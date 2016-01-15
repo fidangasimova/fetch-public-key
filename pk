@@ -1,0 +1,15 @@
+#!/bin/bash
+GITHUB=https://github.com
+if [ "$#" -eq 0 ]; then 
+	echo "$GITHUBNAME's public key"
+	curl $GITHUB/$GITHUBNAME.keys
+else    
+	for NAME in "$@"
+	do
+		echo "$NAME's public key"
+		curl $GITHUB/$NAME.keys
+	done
+fi
+
+
+

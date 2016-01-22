@@ -4,6 +4,7 @@ GITHUB="curl https://github.com"
 if [ "$#" -eq 0 ]; then 
 	echo "$GITHUBNAME's public key"
 	$GITHUB/$GITHUBNAME.keys
+# Additional public keys
 else    
 	for NAME in "$@"
 	do

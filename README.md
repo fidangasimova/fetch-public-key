@@ -1,0 +1,2 @@
+- Variable GITHUBNAME in .bashrc setzen.
+- in .bash_profile .bashrc aufrufen.
